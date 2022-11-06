@@ -1,10 +1,8 @@
 .outer{
     width: 100%;
-    height: auto;
-    margin: auto;
+    height: 50px;
     background-color: white;
     padding: 16px;
     border-radius: 5px;
     box-shadow: var(--shadow);
-    /* display: none; */
 }

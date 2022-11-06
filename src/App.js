@@ -1,10 +1,20 @@
 import styles from './App.module.css';
+import Card from './Components/Card/Card';
 import Header from './Components/Header/Header';
+import Filter from './Components/Filter/Filter';
+import Record from './Components/Record/Record';
+import Body from './Components/Body/Body';
+import records from './data.json';
 
+//study the arrow function
+//always check if json from backend contains data --> record && record.map()
+//study the "Lists and Keys" in React Docs
 function App() {
   return (
-    <div className={styles.outer}>
+    <div>
       <Header />
+      <Filter />
+      <Body />
     </div>
   );
 }

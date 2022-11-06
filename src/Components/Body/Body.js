@@ -1,10 +1,14 @@
 import styles from './Body.module.css';
+import Card from '../Card/Card';
+import Record from '../Record/Record';
 
 function Body(){
     return(
-        <div>
-
-        </div>
+        <Card>
+            <Record />
+            <Record />
+            <Record />
+        </Card>
     );
 }
 
