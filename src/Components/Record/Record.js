@@ -1,9 +1,9 @@
 import styles from './Record.module.css';
 
-function Record(){
+function Record(props){
     return(
         <div className={styles.outer}>
-
+            
         </div>
     );
 }

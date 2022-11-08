@@ -2,7 +2,7 @@ import styles from './Body.module.css';
 import Card from '../Card/Card';
 import Record from '../Record/Record';
 
-function Body(){
+function Body(props){
     return(
         <Card>
             <Record />

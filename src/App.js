@@ -14,7 +14,7 @@ function App() {
     <div>
       <Header />
       <Filter />
-      <Body />
+      <Body records = {records}/>
     </div>
   );
 }

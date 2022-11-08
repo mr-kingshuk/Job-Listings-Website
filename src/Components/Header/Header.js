@@ -4,7 +4,7 @@ import imgDesktop from '../../Images/bg-header-desktop.svg';
 
 function Header(){
 
-    //
+    //create custom hook to adapt to window resize observor
     let bgHeader = imgDesktop;
 
     return(
