@@ -107,28 +107,12 @@
     margin: 13px 0 5px;
 }
 
-.outer .info .tags .tag_name{
-    border: none;
-    background: var(--filter-cyan);
-    padding: 0.8em;
-    border-radius: 5px;
-    font-weight: 700;
-    color: var(--dark-cyan);
-    transition: all .1s ease;
-    cursor: pointer;
-}
-
-.outer .info .tags .tag_name:hover{
-    background-color: var(--dark-cyan);
-    color: white;
-}
-
 @media screen and (860px <= width) {
     .outer{
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 15px;
+        gap: 25px;
     }
     
     .outer .pic{

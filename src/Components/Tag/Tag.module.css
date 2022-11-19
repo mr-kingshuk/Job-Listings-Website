@@ -1,0 +1,15 @@
+.btn{
+    border: none;
+    background: var(--filter-cyan);
+    padding: 0.8em;
+    border-radius: 5px;
+    font-weight: 700;
+    color: var(--dark-cyan);
+    transition: all .1s ease;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: var(--dark-cyan);
+    color: white;
+}

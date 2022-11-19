@@ -7,7 +7,7 @@
     gap: 45px;
 }
 
-@media screen and (width < 8500px){
+@media screen and (width < 850px){
     .outer{
         width: 77%;
     }
