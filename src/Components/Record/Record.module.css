@@ -1,8 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600&display=swap');
+
 .outer{
     width: 100%;
     height: auto;
+    position: relative;
     background-color: white;
     padding: 16px;
     border-radius: 5px;
     box-shadow: var(--shadow);
+    font-family: 'League Spartan', sans-serif;
 }
+
+.featured{
+    border-left: 5px solid var(--dark-cyan);
+}
+
+.outer .pic{
+    position: absolute;
+    bottom: 100%;
+    left: 15px;
+    transform: translateY(50%);
+}
+
+.outer .pic img{
+    width: 65px;
+}
+
+.outer .info{
+    margin-top: 20px; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.outer .info .details >*{
+    margin: 15px 0; 
+}
+
+.outer .info .details .row1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.outer .info .details .row1 .company_name{
+    color: var(--dark-cyan);
+    font-size: 1.25rem;
+    margin-right: 8px;
+    font-weight: 600;
+}
+
+.outer .info .details .row1 .new,
+.outer .info .details .row1 .featured_tab{
+    padding: 0.5em 0.8em;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    border-radius: 15px;
+    font-size: 0.75rem;
+}
+
+.outer .info .details .row1 .new{
+    background: var(--dark-cyan);
+}
+
+.outer .info .details .row1 .featured_tab{
+    background: var(--very-dark-cyan);
+}
+
+.outer .info .details .row2{
+    color: var(--very-dark-cyan);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.outer .info .details .row3{
+    color: var(--dark-gray-cyan);
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.outer .info .details .row3 .dot{
+    background-color: var(--dark-gray-cyan);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+}
+
+.outer .info hr{
+    width: 100%;
+    margin: 0;
+}
+
+.outer .info .tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 13px 0 5px;
+}
+
+.outer .info .tags .tag_name{
+    border: none;
+    background: var(--filter-cyan);
+    padding: 0.8em;
+    border-radius: 5px;
+    font-weight: 700;
+    color: var(--dark-cyan);
+    transition: all .1s ease;
+    cursor: pointer;
+}
+
+.outer .info .tags .tag_name:hover{
+    background-color: var(--dark-cyan);
+    color: white;
+}
+
+@media screen and (860px <= width) {
+    .outer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .outer .pic{
+        position: static;
+        transform: translateY(0);
+    }
+    
+    .outer .pic img{
+        width: 70px;
+    }
+
+    .outer .info{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0;
+        gap: 25px;
+    }
+
+    .outer .info .details >*{
+        margin: 10px 0; 
+    }
+
+    .outer .info hr{
+        display: none;
+    }
+
+    .outer .info .tags{
+        margin-right: 15px;
+    }
+} 
